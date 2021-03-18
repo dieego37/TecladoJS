@@ -11,6 +11,7 @@ let btnNum7 = document.getElementById("btnNum7");
 let btnNum8 = document.getElementById("btnNum8");
 let btnNum9 = document.getElementById("btnNum9");
 let btnNum0 = document.getElementById("btnNum0");
+let btnBorrar = document.getElementById("btnBorrar");
 
 let btnQ = document.getElementById("btnQ");
 let btnW = document.getElementById("btnW");
@@ -33,6 +34,7 @@ let btnJ = document.getElementById("btnJ");
 let btnK = document.getElementById("btnK");
 let btnL = document.getElementById("btnL");
 let btnÑ = document.getElementById("btnÑ");
+let btnEnter = document.getElementById("btnEnter");
 
 let btnZ = document.getElementById("btnZ");
 let btnX = document.getElementById("btnX");
@@ -41,154 +43,402 @@ let btnV = document.getElementById("btnV");
 let btnB = document.getElementById("btnB");
 let btnN = document.getElementById("btnN");
 let btnM = document.getElementById("btnM");
+let btnComa = document.getElementById("btnComa");
+let btnPunto = document.getElementById("btnPunto");
+let btnGuion = document.getElementById("btnGuion");
+let btnEspacio = document.getElementById("btnEspacio");
 
+//temporales
+let teclasTemp = "";
+
+//funciones de números
+const btnNum1F = () => {
+    teclasPr.innerHTML = teclasTemp + "1";
+    teclasTemp = teclasTemp + "1";
+};
+
+const btnNum2F = () => {
+    teclasPr.innerHTML = teclasTemp + "2";
+    teclasTemp = teclasTemp + "2";
+};
+
+const btnNum3F = () => {
+    teclasPr.innerHTML = teclasTemp + "3";
+    teclasTemp = teclasTemp + "3";
+};
+
+const btnNum4F = () => {
+    teclasPr.innerHTML = teclasTemp + "4";
+    teclasTemp = teclasTemp + "4";
+};
+
+const btnNum5F = () => {
+    teclasPr.innerHTML = teclasTemp + "5";
+    teclasTemp = teclasTemp + "5";
+};
+
+const btnNum6F = () => {
+    teclasPr.innerHTML = teclasTemp + "6";
+    teclasTemp = teclasTemp + "6";
+};
+
+const btnNum7F = () => {
+    teclasPr.innerHTML = teclasTemp + "7";
+    teclasTemp = teclasTemp + "7";
+};
+
+const btnNum8F = () => {
+    teclasPr.innerHTML = teclasTemp + "8";
+    teclasTemp = teclasTemp + "8";
+};
+
+const btnNum9F = () => {
+    teclasPr.innerHTML = teclasTemp + "9";
+    teclasTemp = teclasTemp + "9";
+};
+
+const btnNum0F = () => {
+    teclasPr.innerHTML = teclasTemp + "0";
+    teclasTemp = teclasTemp + "0";
+};
+
+//funciones letras 
+
+const btnQF = () => {
+    teclasPr.innerHTML = teclasTemp + "q";
+    teclasTemp = teclasTemp + "q";
+}
+
+const btnWF = () => {
+    teclasPr.innerHTML = teclasTemp + "w";
+    teclasTemp = teclasTemp + "w";
+}
+
+const btnEF = () => {
+    teclasPr.innerHTML = teclasTemp + "e";
+    teclasTemp = teclasTemp + "e";
+}
+
+const btnRF = () =>{
+    teclasPr.innerHTML = teclasTemp + "r";
+    teclasTemp = teclasTemp + "r";
+}
+
+const btnTF = () => {
+    teclasPr.innerHTML = teclasTemp + "t";
+    teclasTemp = teclasTemp + "t";
+}
+
+const btnYF = () => {
+    teclasPr.innerHTML = teclasTemp + "y";
+    teclasTemp = teclasTemp + "y";
+}
+
+const btnUF = () => {
+    teclasPr.innerHTML = teclasTemp + "u";
+    teclasTemp = teclasTemp + "u";
+}
+
+const btnIF = () => {
+    teclasPr.innerHTML = teclasTemp + "i";
+    teclasTemp = teclasTemp + "i";
+}
+
+const btnOF = () =>{
+    teclasPr.innerHTML = teclasTemp + "o";
+    teclasTemp = teclasTemp + "o";
+}
+
+const btnPF = () =>{
+    teclasPr.innerHTML = teclasTemp + "p";
+    teclasTemp = teclasTemp + "p";
+}
+
+const btnAF = () =>{
+    teclasPr.innerHTML = teclasTemp + "a";
+    teclasTemp = teclasTemp + "a";
+}
+
+const btnSF = () => {
+    teclasPr.innerHTML = teclasTemp + "s";
+    teclasTemp = teclasTemp + "s";
+}
+
+const btnDF = () => {
+    teclasPr.innerHTML = teclasTemp + "d";
+    teclasTemp = teclasTemp + "d";
+}
+
+const btnFF = ()=>{
+    teclasPr.innerHTML = teclasTemp + "f";
+    teclasTemp = teclasTemp + "f";
+}
+
+const btnGF = ()=>{
+    teclasPr.innerHTML = teclasTemp + "g";
+    teclasTemp = teclasTemp + "g";
+}
+
+const btnHF = () => {
+    teclasPr.innerHTML = teclasTemp + "h";
+    teclasTemp = teclasTemp + "h";
+}
+
+const btnJF = () => {
+    teclasPr.innerHTML = teclasTemp + "j";
+    teclasTemp = teclasTemp + "j";
+}
+
+const btnKF = () => {
+    teclasPr.innerHTML = teclasTemp + "k";
+    teclasTemp = teclasTemp + "k";
+}
+
+const btnLF = () => {
+    teclasPr.innerHTML = teclasTemp + "l";
+    teclasTemp = teclasTemp + "l";
+}
+
+const btnÑF = () =>{
+    teclasPr.innerHTML = teclasTemp + "ñ";
+    teclasTemp = teclasTemp + "ñ";
+}
+
+const btnEnterF = () =>{
+    teclasPr.innerHTML = teclasTemp + "<br/>";
+    teclasTemp = teclasTemp + "<br/>";
+}
+
+const btnZF =()=>{
+    teclasPr.innerHTML = teclasTemp + "z";
+    teclasTemp = teclasTemp + "z";
+}
+
+const btnXF = ()=>{
+    teclasPr.innerHTML = teclasTemp + "x";
+    teclasTemp = teclasTemp + "x";
+}
+
+const btnCF = ()=>{
+    teclasPr.innerHTML = teclasTemp + "c";
+    teclasTemp = teclasTemp + "c";
+}
+
+const btnVF = () =>{
+    teclasPr.innerHTML = teclasTemp + "v";
+    teclasTemp = teclasTemp + "v";
+}
+
+const btnBF = () =>{
+    teclasPr.innerHTML = teclasTemp + "b";
+    teclasTemp = teclasTemp + "b";
+}
+
+const btnNF = () => {
+    teclasPr.innerHTML = teclasTemp + "n";
+    teclasTemp = teclasTemp + "n";
+}
+
+const btnMF = () => {
+    teclasPr.innerHTML = teclasTemp + "m";
+    teclasTemp = teclasTemp + "m";
+}
+
+const btnComaF = () =>{
+    teclasPr.innerHTML = teclasTemp + ",";
+    teclasTemp = teclasTemp + ",";
+}
+
+const btnPuntoF = () => {
+    teclasPr.innerHTML = teclasTemp + ".";
+    teclasTemp = teclasTemp + ".";
+}
+
+const btnGuionF = () => {
+    teclasPr.innerHTML = teclasTemp + "-";
+    teclasTemp = teclasTemp + "-";
+}
+
+const btnBorrarF = () => {
+    teclasPr.innerHTML = "";
+    teclasTemp = "";
+}
+
+const btnEspacioF = () => {
+    teclasPr.innerHTML = teclasTemp + " ";
+    teclasTemp = teclasTemp + " ";
+}
 
 
 //eventos click
 btnNum1.onclick = function () {
-    console.log("1");
-}
+    btnNum1F();
+};
 
 btnNum2.onclick = function () {
-    console.log("2");
-}
+    btnNum2F();
+};
 
 btnNum3.onclick = function () {
-    console.log("3");
-}
+    btnNum3F();
+};
 
 btnNum4.onclick = function () {
-    console.log("4");
-}
+    btnNum4F();
+};
 
 btnNum5.onclick = function () {
-    console.log("5");
-}
+    btnNum5F();
+};
 
 btnNum6.onclick = function () {
-    console.log("6");
-}
+    btnNum6F();
+};
 
 btnNum7.onclick = function () {
-    console.log("7");
-}
+    btnNum7F();
+};
 
 btnNum8.onclick = function () {
-    console.log("8");
-}
+    btnNum8F();
+};
 
 btnNum9.onclick = function () {
-    console.log("9");
-}
+    btnNum9F();
+};
 
 btnNum0.onclick = function () {
-    console.log("0");
-}
+    btnNum0F();
+};
 
 btnQ.onclick = function () {
-    console.log("Q");
-}
+    btnQF();
+};
 
 btnW.onclick = function () {
-    console.log("W");
-}
+    btnWF();
+};
 
 btnE.onclick = function () {
-    console.log("E");
-}
+    btnEF();
+};
 
 btnR.onclick = function () {
-    console.log("R");
-}
+    btnRF();
+};
 
 btnT.onclick = function () {
-    console.log("T");
-}
+    btnTF();
+};
 
 btnY.onclick = function () {
-    console.log("Y");
-}
+    btnYF();
+};
 
 btnU.onclick = function () {
-    console.log("U");
-}
+    btnUF();
+};
 
 btnI.onclick = function () {
-    console.log("I");
-}
+    btnIF();
+};
 
 btnO.onclick = function () {
-    console.log("O");
-}
+    btnOF();
+};
 
 btnP.onclick = function () {
-    console.log("P");
-}
+    btnPF();
+};
 
 btnA.onclick = function () {
-    console.log("A");
-}
+    btnAF();
+};
 
 btnS.onclick = function () {
-    console.log("S");
-}
+    btnSF();
+};
 
 btnD.onclick = function () {
-    console.log("D");
-}
+    btnDF();
+};
 
 btnF.onclick = function () {
-    console.log("F");
-}
+    btnFF();
+};
 
 btnG.onclick = function () {
-    console.log("G");
-}
+    btnGF();
+};
 
 btnH.onclick = function () {
-    console.log("H");
-}
+    btnHF();
+};
 
 btnJ.onclick = function () {
-    console.log("J");
-}
+    btnJF();
+};
 
 btnK.onclick = function () {
-    console.log("K");
-}
+    btnKF();
+};
 
 btnL.onclick = function () {
-    console.log("L");
-}
+    btnLF();
+};
 
 btnÑ.onclick = function () {
-    console.log("Ñ");
-}
+    btnÑF();
+};
 
 btnZ.onclick = function () {
-    console.log("Z");
-}
+    btnZF();
+};
 
 btnX.onclick = function () {
-    console.log("X");
-}
+    btnXF();
+};
 
 btnC.onclick = function () {
-    console.log("C");
-}
+    btnCF();
+};
 
 btnV.onclick = function () {
-    console.log("V");
-}
+    btnVF();
+};
 
 btnB.onclick = function () {
-    console.log("B");
-}
+    btnBF();
+};
 
 btnN.onclick = function () {
-    console.log("N");
-}
+    btnNF();
+};
 
 btnM.onclick = function () {
-    console.log("M");
+    btnMF();
+};
+
+btnBorrar.onclick = function () {
+    btnBorrarF();
+}
+
+btnComa.onclick = function () {
+    btnComaF();
+}
+
+btnPunto.onclick =function () {
+    btnPuntoF();
+}
+
+btnGuion.onclick = function () {
+    btnGuionF();
+}
+
+btnEnter.onclick = function () {
+    btnEnterF();
+}
+
+btnEspacio.onclick =  function () {
+    btnEspacioF();
 }
